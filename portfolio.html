@@ -1,0 +1,535 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhishek Rathore Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Abhishek Rathore, Full-Stack Developer specializing in Ionic, Angular, React, Firebase, D3.js, Node.js, Django, and high-performance web and mobile apps.">
+  <meta name="keywords"
+    content="Abhishek Rathore, Full-Stack Developer, Ionic, Angular, React, Firebase, D3.js, Node.js, Django, Web Development, Mobile Apps, Portfolio, Developer, India, Consultant, Marketplace, Dashboard, Analytics, SaaS, CRM, Billing, Visualization, Recruitment Portal, Corporate Website, Social Media App">
+  <meta name="author" content="Abhishek Rathore">
+  <link rel="canonical" href="https://abhishekrathore.github.io/">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Abhishek Rathore Portfolio">
+  <meta property="og:description"
+    content="Portfolio of Abhishek Rathore, Full-Stack Developer specializing in Ionic, Angular, React, Firebase, D3.js, Node.js, Django, and high-performance web and mobile apps.">
+  <meta property="og:url" content="https://abhishekrathore.github.io/">
+  <meta property="og:image" content="https://abhishekrathore.github.io/og-image.png">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Abhishek Rathore Portfolio">
+  <meta name="twitter:description"
+    content="Portfolio of Abhishek Rathore, Full-Stack Developer specializing in Ionic, Angular, React, Firebase, D3.js, Node.js, Django, and high-performance web and mobile apps.">
+  <meta name="twitter:image" content="https://abhishekrathore.github.io/og-image.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Abhishek Rathore",
+    "email": "abhishek.bits.cs@gmail.com",
+    "url": "https://www.linkedin.com/in/abhishek87/"
+  }
+  </script>
+  <style>
+    body {
+      font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
+      background: #f6f8fa;
+      color: #24292e;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .dark-mode {
+      background: #181a1b;
+      color: #c9d1d9;
+    }
+
+    .stackedit__html h1,
+    .stackedit__html h2,
+    .stackedit__html h3 {
+      font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+
+    .stackedit__html hr {
+      border: none;
+      border-top: 1px solid #d0d7de;
+      margin: 32px 0;
+    }
+
+    .dark-mode .stackedit__html hr {
+      border-top: 1px solid #30363d;
+    }
+
+    .social-icons svg {
+      filter: grayscale(1) contrast(1.2);
+      transition: filter 0.2s, background 0.2s;
+      border-radius: 6px;
+    }
+
+    .social-icons a:hover svg {
+      filter: grayscale(0) contrast(1.5) drop-shadow(0 2px 8px #0002);
+      background: #eaeaea;
+    }
+
+    .dark-mode .social-icons a:hover svg {
+      background: #222;
+    }
+
+    .social-icons a {
+      outline: none;
+      border-radius: 6px;
+      transition: box-shadow 0.2s;
+    }
+
+    .social-icons a:focus {
+      box-shadow: 0 0 0 2px #0969da;
+    }
+
+    .mode-toggle {
+      position: absolute;
+      top: 18px;
+      right: 24px;
+      background: #24292e;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 8px 16px;
+      font-family: inherit;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+      z-index: 100;
+    }
+
+    .mode-toggle.light {
+      background: #f6f8fa;
+      color: #24292e;
+      border: 1px solid #d0d7de;
+    }
+
+    .mode-toggle:focus {
+      outline: 2px solid #0969da;
+    }
+
+    .stackedit__html {
+      max-width: 800px;
+      margin: 48px auto 0 auto;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 10px;
+      box-shadow: 0 2px 24px #0001;
+      padding: 32px 32px 24px 32px;
+      transition: background 0.3s;
+    }
+
+    .dark-mode .stackedit__html {
+      background: rgba(24, 26, 27, 0.98);
+      box-shadow: 0 2px 24px #0005;
+    }
+
+    a {
+      color: #0969da;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #218bff;
+    }
+
+    .dark-mode a {
+      color: #58a6ff;
+    }
+
+    .dark-mode a:hover {
+      color: #79c0ff;
+    }
+
+    .social-icons-row {
+      display: flex;
+      gap: 32px;
+      align-items: flex-end;
+      margin-bottom: 32px;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    .icon-label {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      min-width: 80px;
+      color: #757575;
+      font-size: 0.98rem;
+      text-decoration: none;
+      font-family: inherit;
+      transition: color 0.2s;
+    }
+
+    .icon-label span {
+      margin-top: 8px;
+      font-size: 0.98rem;
+      color: #757575;
+      word-break: break-word;
+    }
+
+    .icon-label:focus span,
+    .icon-label:hover span {
+      color: #0969da;
+    }
+
+    .dark-mode .icon-label span {
+      color: #bdbdbd;
+    }
+
+    .dark-mode .icon-label:focus span,
+    .dark-mode .icon-label:hover span {
+      color: #58a6ff;
+    }
+
+    @media (max-width: 600px) {
+      .social-icons-row {
+        gap: 16px;
+        justify-content: center;
+      }
+
+      .icon-label {
+        min-width: 60px;
+        font-size: 0.92rem;
+      }
+
+      .icon-label span {
+        font-size: 0.92rem;
+      }
+    }
+
+    .console-panel {
+      background: #f5f7fa;
+      color: #23272e;
+      border-radius: 8px;
+      box-shadow: 0 2px 16px #0001;
+      border: 1.5px solid #e0e3e8;
+      margin-bottom: 32px;
+      padding: 28px 28px 20px 28px;
+      font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
+      font-size: 1.01rem;
+      transition: background 0.3s, color 0.3s;
+      position: relative;
+    }
+
+    .console-panel h2 {
+      font-size: 1.2rem;
+      color: #0969da;
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-family: inherit;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .console-panel ul,
+    .console-panel p,
+    .console-panel strong,
+    .console-panel em,
+    .console-panel a {
+      color: #23272e;
+      font-family: inherit;
+    }
+
+    .console-panel ul {
+      margin-bottom: 10px;
+    }
+
+    .console-panel strong {
+      color: #b26a00;
+      font-weight: 600;
+    }
+
+    .console-panel em {
+      color: #0077b6;
+      font-style: normal;
+    }
+
+    .console-panel a {
+      color: #0969da;
+      text-decoration: underline;
+    }
+
+    .console-panel a:hover {
+      color: #218bff;
+    }
+
+    .dark-mode .console-panel {
+      background: #181a1b;
+      color: #e6e6e6;
+      border: 1.5px solid #30363d;
+      box-shadow: 0 2px 24px #0005;
+    }
+
+    .dark-mode .console-panel h2 {
+      color: #58a6ff;
+    }
+
+    .dark-mode .console-panel ul,
+    .dark-mode .console-panel p,
+    .dark-mode .console-panel strong,
+    .dark-mode .console-panel em,
+    .dark-mode .console-panel a {
+      color: #e6e6e6;
+    }
+
+    .dark-mode .console-panel strong {
+      color: #ffd580;
+    }
+
+    .dark-mode .console-panel em {
+      color: #b2e5ff;
+    }
+
+    .dark-mode .console-panel a {
+      color: #79c0ff;
+    }
+
+    .dark-mode .console-panel a:hover {
+      color: #b2e5ff;
+    }
+
+    @media (max-width: 600px) {
+      .console-panel {
+        padding: 16px 8px 12px 8px;
+        font-size: 0.97rem;
+      }
+
+      .console-panel h2 {
+        font-size: 1.05rem;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700&display=swap" rel="stylesheet">
+  <script>
+    // Dark/Light mode toggle logic
+    function setMode(dark) {
+      document.body.classList.toggle('dark-mode', dark);
+      document.querySelector('.mode-toggle').classList.toggle('light', !dark);
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+    }
+    function toggleMode() {
+      setMode(!document.body.classList.contains('dark-mode'));
+    }
+    // On load, set mode from localStorage or system preference
+    (function () {
+      const saved = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      setMode(saved === 'dark' || (!saved && prefersDark));
+    })();
+  </script>
+</head>
+
+<body class="stackedit">
+  <nav class="top-nav"
+    style="margin: 0 auto; max-width: 800px; padding-top: 24px; padding-bottom: 8px; text-align: right;">
+    <a href="index.html" class="nav-link"
+      style="margin-right: 18px; color: #0969da; text-decoration: underline; font-size: 1rem;">Resume</a>
+    <a href="portfolio.html" class="nav-link"
+      style="color: #0969da; text-decoration: underline; font-size: 1rem;">Portfolio</a>
+  </nav>
+  <button class="mode-toggle" onclick="toggleMode()" aria-label="Toggle dark/light mode">🌙 Dark Mode</button>
+  <div class="stackedit__html">
+    <h1>Abhishek Rathore</h1>
+    <div class="social-icons-row">
+      <a href="https://github.com/abhishekrathore" target="_blank" title="GitHub" class="icon-label">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="32" height="32" rx="6" fill="#E0E0E0"/>
+          <path d="M16 8C11.58 8 8 11.58 8 16C8 19.31 10.29 22.06 13.47 22.88C13.93 22.96 14.09 22.7 14.09 22.48C14.09 22.29 14.08 21.7 14.08 20.97C11.73 21.45 11.22 19.98 11.22 19.98C10.82 18.97 10.23 18.7 10.23 18.7C9.36 18.13 10.3 18.14 10.3 18.14C11.26 18.21 11.74 19.13 11.74 19.13C12.6 20.62 14.03 20.18 14.59 19.96C14.67 19.29 14.93 18.83 15.22 18.59C13.44 18.36 11.56 17.66 11.56 14.97C11.56 14.19 11.84 13.56 12.31 13.06C12.23 12.83 11.98 12.09 12.38 11.09C12.38 11.09 13.06 10.86 14.08 11.62C14.72 11.45 15.41 11.37 16.1 11.37C16.79 11.37 17.48 11.45 18.12 11.62C19.14 10.86 19.82 11.09 19.82 11.09C20.22 12.09 19.97 12.83 19.89 13.06C20.36 13.56 20.64 14.19 20.64 14.97C20.64 17.67 18.75 18.36 16.97 18.59C17.33 18.89 17.65 19.48 17.65 20.34C17.65 21.5 17.64 22.23 17.64 22.48C17.64 22.7 17.8 22.97 18.26 22.88C21.44 22.06 23.73 19.31 23.73 16C23.73 11.58 20.15 8 16 8Z" fill="#757575"/>
+        </svg>
+        <span>GitHub</span>
+      </a>
+      <a href="https://www.linkedin.com/in/abhishek87/" target="_blank" title="LinkedIn" class="icon-label">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="32" height="32" rx="6" fill="#E0E0E0"/>
+          <path d="M12.1 13.6H9.2V22H12.1V13.6ZM10.65 12.4C11.55 12.4 12.2 11.7 12.2 10.95C12.18 10.18 11.55 9.5 10.67 9.5C9.79 9.5 9.12 10.18 9.12 10.95C9.12 11.7 9.77 12.4 10.65 12.4ZM22.5 17.2C22.5 14.5 20.95 13.3 19.13 13.3C17.97 13.3 17.37 13.93 17.07 14.43V13.6H14.18C14.22 14.33 14.18 22 14.18 22H17.07V17.33C17.07 17.1 17.09 16.87 17.16 16.7C17.36 16.22 17.81 15.72 18.54 15.72C19.44 15.72 19.82 16.43 19.82 17.41V22H22.5V17.2Z" fill="#757575"/>
+        </svg>
+        <span>LinkedIn</span>
+      </a>
+      <a href="mailto:abhishek.bits.cs@gmail.com" title="Email" class="icon-label">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="32" height="32" rx="6" fill="#E0E0E0"/>
+          <path d="M8 11.5C8 10.67 8.67 10 9.5 10H22.5C23.33 10 24 10.67 24 11.5V20.5C24 21.33 23.33 22 22.5 22H9.5C8.67 22 8 21.33 8 20.5V11.5ZM9.5 12L16 16.25L22.5 12V11.5L16 15.75L9.5 11.5V12Z" fill="#757575"/>
+        </svg>
+        <span>Email me</span>
+      </a>
+      <a href="Abhishek_Rathore-startup.pdf" target="_blank" title="Resume (PDF)" class="icon-label">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="32" height="32" rx="6" fill="#E0E0E0"/>
+          <g>
+            <rect x="10" y="8" width="12" height="16" rx="2" fill="#fff" stroke="#757575" stroke-width="1.5"/>
+            <rect x="12" y="12" width="8" height="1.5" rx="0.75" fill="#bdbdbd"/>
+            <rect x="12" y="15" width="8" height="1.5" rx="0.75" fill="#bdbdbd"/>
+            <rect x="12" y="18" width="5" height="1.5" rx="0.75" fill="#bdbdbd"/>
+            <rect x="15.5" y="20.5" width="3.5" height="1" rx="0.5" fill="#e57373"/>
+          </g>
+        </svg>
+        <span>Download Resume</span>
+      </a>
+    </div>
+
+    <section class="console-panel">
+      <h2 id="enappd.com---marketplace-development">1. <a href="http://Enappd.com">Enappd.com</a> - Marketplace
+        Development</h2>
+      <p><strong>Platform:</strong> <em>Ionic (Angular) apps / Python Django backend</em><br>
+        <strong>Website:</strong> <a href="https://enappd.com">enappd.com</a>
+      </p>
+      <p>A ready-to-deploy cross platform apps marketplace built with modular architecture.</p>
+      <strong>Key Features:</strong>
+      <ul>
+        <li>Vendor onboarding, product listings, and cart</li>
+        <li>Ionic / React-Native app marketplace</li>
+        <li>Optimized for cross-platform deployment</li>
+      </ul>
+      <strong>Role:</strong> Full-stack development, UI design, customer success roles, DevOps, CI/CD
+    </section>
+
+    <section class="console-panel">
+      <h2 id="grocery-app--admin-dashboard--and-15-apps">2. Grocery App + Admin Dashboard (and 15+ apps)</h2>
+      <p><strong>Platform:</strong> <em>Ionic 5 + Angular/React + Firebase</em> (published on <a
+          href="http://enappd.com">enappd.com</a>)<br>
+        <strong>Store Link:</strong> <a href="https://store.enappd.com/">Enappd Store</a><br>
+        <strong>App Link:</strong> <a href="https://store.enappd.com/product/ionic-grocery-app-and-admin-dashboard/">App
+          on Enappd Store</a>
+      </p>
+      <p>Three-part app suite:</p>
+      <ul>
+        <li>Customer-facing grocery shopping app UI in ionic</li>
+        <li>Delivery agent app</li>
+        <li>Admin web dashboard in Ionic</li>
+      </ul>
+      <strong>Key Features:</strong>
+      <ul>
+        <li>Real-time order tracking</li>
+        <li>Push notifications</li>
+        <li>Firebase Authentication and Firestore</li>
+        <li>Responsive UI for mobile and web</li>
+      </ul>
+      <strong>Role:</strong> Ionic Angular App development, Firebase backend, UI/UX
+    </section>
+
+    <section class="console-panel">
+      <h2 id="gign-live-concert-app">3. GIGN Live Concert App</h2>
+      <p><strong>Platform:</strong> <em>Ionic Angular + NodeJS + Firebase</em><br>
+        <strong>Live App:</strong> <a href="https://app.gign.ca/tabs/shows">app.gign.ca/tabs/shows</a>
+      </p>
+      <p>Concert booking and live event browsing app in Canada.</p>
+      <strong>Key Features:</strong>
+      <ul>
+        <li>List and filter upcoming shows</li>
+        <li>Purchase tickets via integrated gateway</li>
+        <li>Location and date filtering</li>
+        <li>Clean Ionic UI design</li>
+      </ul>
+      <strong>Role:</strong> Ionic Angular frontend , Firebase backend, Auto Deployment pipeline
+    </section>
+
+    <section class="console-panel">
+      <h2 id="real-time-insights-platform">4. Real-Time Insights Platform</h2>
+      <p><strong>Platform:</strong> <em>Angular + D3.js</em><br>
+        <strong>Website:</strong> <a href="https://www.theskydiveapp.com">theskydiveapp.com</a>
+      </p>
+      <p>Analytics dashboard with real-time data visualizations.</p>
+      <strong>Key Features:</strong>
+      <ul>
+        <li>D3-based interactive charts in Angular</li>
+        <li>Historical + live data toggle</li>
+        <li>Geo and user segmentation</li>
+        <li>Angular component-based architecture</li>
+      </ul>
+      <strong>Role:</strong> D3 integration, Angular frontend components, performance tuning
+    </section>
+
+    <section class="console-panel">
+      <h2 id="iit-jammu-recruitment-portal">5. IIT Jammu Recruitment Portal</h2>
+      <p><strong>Platform:</strong> <em>Angular</em><br>
+        <strong>Live Portal:</strong> <a href="https://apply.iitjammu.ac.in/#/home">apply.iitjammu.ac.in</a>
+      </p>
+      <p>Recruitment portal for faculty and staff positions of University IIT Jammu.</p>
+      <strong>Key Features:</strong>
+      <ul>
+        <li>Dynamic Forms and user identity validations</li>
+        <li>Fee collection + payment processing</li>
+        <li>Role based admin panels</li>
+        <li>Document generation using PDF+ Email</li>
+      </ul>
+      <strong>Role:</strong> Angular frontend lead, state management, form workflows, PDF
+    </section>
+
+    <section class="console-panel">
+      <h2 id="cloudmango-–-freelancer-billing-platform">6. Cloudmango – Freelancer Billing Platform</h2>
+      <p><strong>Platform:</strong> <em>Web App (Custom CRM + Billing Suite)</em><br>
+        <strong>Company:</strong> <a href="https://www.f6s.com/company/cloudmango">Cloudmango on F6S</a>
+      </p>
+      <p>SaaS platform for freelancers and small agencies.</p>
+      <strong>Key Features:</strong>
+      <ul>
+        <li>Invoice and estimate generation</li>
+        <li>Expense tracking</li>
+        <li>Branded PDF exports</li>
+        <li>CRM for leads and clients</li>
+      </ul>
+      <strong>Role:</strong> UI development in React, logic implementation, SaaS flows
+    </section>
+
+    <section class="console-panel">
+      <h2 id="🏭-fabheads-–-carbon-composites-manufacturer">7. 🏭 FabHeads – Carbon Composites Manufacturer</h2>
+      <p><strong>Platform:</strong> <em>CMS + Custom Backend</em><br>
+        <strong>Website:</strong> <a href="https://www.fabheads.in">fabheads.in</a>
+      </p>
+      <p>Corporate site for India’s leading composites startup.</p>
+      <strong>Key Features:</strong>
+      <ul>
+        <li>Product catalog and inquiry forms</li>
+        <li>Client testimonials and project case studies</li>
+        <li>News, careers, and media section</li>
+      </ul>
+      <strong>Role:</strong> Product site development and digital content management
+    </section>
+
+    <section class="console-panel">
+      <h2 id="swaniti-initiative-visualizations">8. Swaniti Initiative Visualizations</h2>
+      <p><strong>Platform:</strong> <em>Custom Web (PHP/JS)</em><br>
+        <strong>Website:</strong> <a href="https://swaniti.com">swaniti.com</a>
+      </p>
+      <p>D3 Visualisation for this Platform for public policy projects and outreach.</p>
+      <strong>Key Features:</strong>
+      <ul>
+        <li>Project showcases and policy research - in D3 js maps</li>
+        <li>Angular based portal development.</li>
+      </ul>
+      <strong>Role:</strong> Website development, D3 advanced maps, and UI/UX flow
+    </section>
+
+    <section class="console-panel">
+      <h2 id="tickleboard.com">9. <a href="http://Tickleboard.com">Tickleboard.com</a></h2>
+      <p><strong>Platform:</strong> <em>Angular 1 + NodeJS (<a href="http://Parse.com">Parse.com</a>)</em><br>
+        <strong>Website:</strong> : <a
+          href="https://www.crunchbase.com/organization/wisemoo-labs">https://www.crunchbase.com/organization/wisemoo-labs</a>
+      </p>
+      <p>A social media application of school kids to safely share content limited to kids.</p>
+      <strong>Key Features:</strong>
+      <ul>
+        <li>Backend in mBaaS <a href="http://parse.com">parse.com</a></li>
+        <li>Frontend in AngularJS 1.</li>
+        <li>Mobile APIs and Authentications</li>
+      </ul>
+      <strong>Role:</strong> API authentications, Backend management, Angular developer
+    </section>
+
+    <p>There are many other web development roles I have done over 12 years. ( as a consultant) and details can’t be
+      shared without the consent of company owners.</p>
+  </div>
+</body>
+
+</html>
