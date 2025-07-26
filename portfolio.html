@@ -33,121 +33,18 @@
     "url": "https://www.linkedin.com/in/abhishek87/"
   }
   </script>
-  <style>
-   @import "style.css";
-     
-    .console-panel {
-      background: #f5f7fa;
-      color: #24292e;
-      border-radius: 8px;
-      box-shadow: 0 2px 16px #0001;
-      border: 1.5px solid #d0d7de;
-      margin-bottom: 2.2em;
-      padding: 28px 28px 20px 28px;
-      font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
-      font-size: 1.01rem;
-      transition: background 0.3s, color 0.3s;
-      position: relative;
-    }
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" media="print" href="print.css" />
 
-    .console-panel:last-child {
-      margin-bottom: 0;
-    }
-
-    .console-panel h2 {
-      font-size: 1.2rem;
-      color: #0969da;
-      margin-top: 0;
-      margin-bottom: 12px;
-      font-family: inherit;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-    }
-
-    .console-panel ul,
-    .console-panel p,
-    .console-panel strong,
-    .console-panel em,
-    .console-panel a {
-      color: #24292e;
-      font-family: inherit;
-    }
-
-    .console-panel ul {
-      margin-bottom: 10px;
-      margin: 0.5em 0 0.5em 1.2em;
-      padding: 0;
-    }
-
-    .console-panel li {
-      margin-bottom: 0.3em;
-    }
-
-    .console-panel strong {
-      color: #b26a00;
-      font-weight: 600;
-    }
-
-    .console-panel em {
-      color: #0077b6;
-      font-style: normal;
-    }
-
-    .console-panel a {
-      color: #0969da;
-      text-decoration: underline;
-    }
-
-    .console-panel a:hover {
-      color: #218bff;
-    }
-
-    .dark-mode .console-panel {
-      background: #181a1b;
-      color: #c9d1d9;
-      border: 1.5px solid #30363d;
-      box-shadow: 0 2px 24px #0005;
-    }
-
-    .dark-mode .console-panel h2 {
-      color: #58a6ff;
-    }
-
-    .dark-mode .console-panel ul,
-    .dark-mode .console-panel p,
-    .dark-mode .console-panel strong,
-    .dark-mode .console-panel em,
-    .dark-mode .console-panel a {
-      color: #c9d1d9;
-    }
-
-    .dark-mode .console-panel strong {
-      color: #ffd580;
-    }
-
-    .dark-mode .console-panel em {
-      color: #b2e5ff;
-    }
-
-    .dark-mode .console-panel a {
-      color: #79c0ff;
-    }
-
-    .dark-mode .console-panel a:hover {
-      color: #b2e5ff;
-    }
-
-
-  </style>
   <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-  <div class="mode-toggle-container">
+  <div class="mode-toggle-container no-print">
   <button class="mode-toggle" onclick="toggleMode()" aria-label="Toggle dark/light mode">🌙 Switch to Dark Mode</button>
   </div>
-  <nav class="top-nav">
+  <nav class="top-nav no-print">
     <a href="index.html" class="nav-link">Resume</a>
     <a href="portfolio.html" class="nav-link">Portfolio</a>
   </nav>
@@ -186,7 +83,20 @@
             <rect x="15.5" y="20.5" width="3.5" height="1" rx="0.5" fill="#e57373"/>
           </g>
         </svg>
-        <span>Download Resume</span>
+        <span>Resume</span>
+      </a>
+       <a href="Abhishek-Rathore-Portfolio.pdf" target="_blank" title="Portfolio (PDF)" class="icon-label">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="32" height="32" rx="6" fill="#E0E0E0"/>
+          <g>
+            <rect x="10" y="8" width="12" height="16" rx="2" fill="#fff" stroke="#757575" stroke-width="1.5"/>
+            <rect x="12" y="12" width="8" height="1.5" rx="0.75" fill="#bdbdbd"/>
+            <rect x="12" y="15" width="8" height="1.5" rx="0.75" fill="#bdbdbd"/>
+            <rect x="12" y="18" width="5" height="1.5" rx="0.75" fill="#bdbdbd"/>
+            <rect x="15.5" y="20.5" width="3.5" height="1" rx="0.5" fill="#e57373"/>
+          </g>
+        </svg>
+        <span>Portfolio</span>
       </a>
     </div>
 
