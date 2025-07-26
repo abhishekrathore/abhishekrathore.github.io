@@ -34,183 +34,8 @@
   }
   </script>
   <style>
-    body {
-      font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
-      background: #f6f8fa;
-      color: #24292e;
-      margin: 0;
-      padding: 0;
-      transition: background 0.3s, color 0.3s;
-    }
-
-    .dark-mode {
-      background: #181a1b;
-      color: #c9d1d9;
-    }
-
-    .stackedit__html h1,
-    .stackedit__html h2,
-    .stackedit__html h3 {
-      font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
-      font-weight: 700;
-      letter-spacing: -1px;
-    }
-
-    .stackedit__html h1 {
-      font-size: 2.2rem;
-      margin-bottom: 0.5em;
-    }
-
-    .stackedit__html h2 {
-      font-size: 1.3rem;
-      margin-top: 2.2em;
-      margin-bottom: 0.5em;
-      color: #0969da;
-      letter-spacing: -0.5px;
-    }
-
-    .dark-mode .stackedit__html h2 {
-      color: #58a6ff;
-    }
-
-    .stackedit__html hr {
-      border: none;
-      border-top: 1px solid #d0d7de;
-      margin: 32px 0;
-    }
-
-    .dark-mode .stackedit__html hr {
-      border-top: 1px solid #30363d;
-    }
-
-    .social-icons svg {
-      filter: grayscale(1) contrast(1.2);
-      transition: filter 0.2s, background 0.2s;
-      border-radius: 6px;
-    }
-
-    .social-icons a:hover svg {
-      filter: grayscale(0) contrast(1.5) drop-shadow(0 2px 8px #0002);
-      background: #eaeaea;
-    }
-
-    .dark-mode .social-icons a:hover svg {
-      background: #222;
-    }
-
-    .social-icons a {
-      outline: none;
-      border-radius: 6px;
-      transition: box-shadow 0.2s;
-    }
-
-    .social-icons a:focus {
-      box-shadow: 0 0 0 2px #0969da;
-    }
-
-    .mode-toggle {
-      position: absolute;
-      top: 18px;
-      right: 24px;
-      background: #24292e;
-      color: #fff;
-      border: none;
-      border-radius: 6px;
-      padding: 8px 16px;
-      font-family: inherit;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background 0.2s, color 0.2s;
-      z-index: 100;
-    }
-
-    .mode-toggle.light {
-      background: #f6f8fa;
-      color: #24292e;
-      border: 1px solid #d0d7de;
-    }
-
-    .mode-toggle:focus {
-      outline: 2px solid #0969da;
-    }
-
-    .stackedit__html {
-      max-width: 800px;
-      margin: 48px auto 0 auto;
-      background: rgba(255, 255, 255, 0.95);
-      border-radius: 10px;
-      box-shadow: 0 2px 24px #0001;
-      padding: 32px 32px 24px 32px;
-      transition: background 0.3s;
-    }
-
-    .dark-mode .stackedit__html {
-      background: rgba(24, 26, 27, 0.98);
-      box-shadow: 0 2px 24px #0005;
-    }
-
-    a {
-      color: #0969da;
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    a:hover {
-      text-decoration: underline;
-      color: #218bff;
-    }
-
-    .dark-mode a {
-      color: #58a6ff;
-    }
-
-    .dark-mode a:hover {
-      color: #79c0ff;
-    }
-
-    .social-icons-row {
-      display: flex;
-      gap: 32px;
-      align-items: flex-end;
-      margin-bottom: 32px;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-    }
-
-    .icon-label {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      min-width: 80px;
-      color: #757575;
-      font-size: 0.98rem;
-      text-decoration: none;
-      font-family: inherit;
-      transition: color 0.2s;
-    }
-
-    .icon-label span {
-      margin-top: 8px;
-      font-size: 0.98rem;
-      color: #757575;
-      word-break: break-word;
-    }
-
-    .icon-label:focus span,
-    .icon-label:hover span {
-      color: #0969da;
-    }
-
-    .dark-mode .icon-label span {
-      color: #bdbdbd;
-    }
-
-    .dark-mode .icon-label:focus span,
-    .dark-mode .icon-label:hover span {
-      color: #58a6ff;
-    }
-
+   @import "style.css";
+     
     .console-panel {
       background: #f5f7fa;
       color: #24292e;
@@ -312,73 +137,19 @@
       color: #b2e5ff;
     }
 
-    @media (max-width: 600px) {
-      .social-icons-row {
-        gap: 16px;
-        justify-content: center;
-      }
 
-      .icon-label {
-        min-width: 60px;
-        font-size: 0.92rem;
-      }
-
-      .icon-label span {
-        font-size: 0.92rem;
-      }
-
-      .stackedit__html {
-        padding: 16px 4px 12px 4px;
-      }
-
-      .stackedit__html h1 {
-        font-size: 1.4rem;
-      }
-
-      .stackedit__html h2 {
-        font-size: 1.05rem;
-      }
-
-      .console-panel {
-        padding: 16px 8px 12px 8px;
-        font-size: 0.97rem;
-      }
-
-      .console-panel h2 {
-        font-size: 1.05rem;
-      }
-    }
   </style>
   <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700&display=swap" rel="stylesheet">
-  <script>
-    // Dark/Light mode toggle logic
-    function setMode(dark) {
-      document.body.classList.toggle('dark-mode', dark);
-      document.querySelector('.mode-toggle').classList.toggle('light', !dark);
-      localStorage.setItem('theme', dark ? 'dark' : 'light');
-    }
-    function toggleMode() {
-      setMode(!document.body.classList.contains('dark-mode'));
-    }
-    // On load, set mode from localStorage or system preference
-    (function () {
-      const saved = localStorage.getItem('theme');
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      setMode(saved === 'dark' || (!saved && prefersDark));
-    })();
-  </script>
+
 </head>
 
-<body class="stackedit">
-  <nav class="top-nav"
-    style="margin: 0 auto; max-width: 800px; padding-top: 24px; padding-bottom: 8px; text-align: right;">
-    <a href="index.html" class="nav-link"
-      style="margin-right: 18px; color: #0969da; text-decoration: underline; font-size: 1rem;">Resume</a>
-    <a href="portfolio.html" class="nav-link"
-      style="color: #0969da; text-decoration: underline; font-size: 1rem;">Portfolio</a>
-  </nav>
+<body>
   <button class="mode-toggle" onclick="toggleMode()" aria-label="Toggle dark/light mode">🌙 Dark Mode</button>
-  <div class="stackedit__html">
+  <nav class="top-nav">
+    <a href="index.html" class="nav-link">Resume</a>
+    <a href="portfolio.html" class="nav-link">Portfolio</a>
+  </nav>
+  <div class="content-container">
     <h1>Abhishek Rathore</h1>
     <div class="social-icons-row">
       <a href="https://github.com/abhishekrathore" target="_blank" title="GitHub" class="icon-label">
@@ -570,5 +341,22 @@
       shared without the consent of company owners.</p>
   </div>
 </body>
+<script>
+  // Dark/Light mode toggle logic
+  function setMode(dark) {
+    document.body.classList.toggle('dark-mode', dark);
+    document.querySelector('.mode-toggle').classList.toggle('light', !dark);
+    localStorage.setItem('theme', dark ? 'dark' : 'light');
+  }
+  function toggleMode() {
+    setMode(!document.body.classList.contains('dark-mode'));
+  }
+  // On load, set mode from localStorage or system preference
+  (function () {
+    const saved = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    setMode(saved === 'dark' || (!saved && prefersDark));
+  })();
+</script>
 
 </html>
