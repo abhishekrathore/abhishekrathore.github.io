@@ -24,19 +24,19 @@
     body {
       font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
       background: #f6f8fa;
-      color: #23272e;
+      color: #24292e;
       margin: 0;
       padding: 0;
       transition: background 0.3s, color 0.3s;
     }
     .dark-mode {
       background: #181a1b;
-      color: #e6e6e6;
+      color: #c9d1d9;
     }
     .resume-container {
       max-width: 800px;
       margin: 48px auto 0 auto;
-      background: rgba(255,255,255,0.97);
+      background: rgba(255,255,255,0.95);
       border-radius: 10px;
       box-shadow: 0 2px 24px #0001;
       padding: 32px 32px 24px 32px;
@@ -47,12 +47,14 @@
       box-shadow: 0 2px 24px #0005;
     }
     h1 {
+      font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
       font-size: 2.2rem;
       font-weight: 700;
       margin-bottom: 0.5em;
       letter-spacing: -1px;
     }
     h2 {
+      font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
       font-size: 1.3rem;
       font-weight: 700;
       margin-top: 2.2em;
@@ -64,17 +66,18 @@
       color: #58a6ff;
     }
     h3 {
+      font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
       font-size: 1.08rem;
       font-weight: 600;
       margin: 0.7em 0 0.2em 0;
-      color: #23272e;
+      color: #24292e;
     }
     .dark-mode h3 {
-      color: #e6e6e6;
+      color: #c9d1d9;
     }
     .resume-section {
       margin-bottom: 2.2em;
-      border-bottom: 1px solid #e0e3e8;
+      border-bottom: 1px solid #d0d7de;
       padding-bottom: 1.2em;
     }
     .dark-mode .resume-section {
@@ -190,6 +193,21 @@
     }
     .mode-toggle:focus {
       outline: 2px solid #0969da;
+    }
+    a {
+      color: #0969da;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: #218bff;
+    }
+    .dark-mode a {
+      color: #58a6ff;
+    }
+    .dark-mode a:hover {
+      color: #79c0ff;
     }
     @media (max-width: 600px) {
       .resume-container {

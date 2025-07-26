@@ -38,6 +38,8 @@
       font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
       background: #f6f8fa;
       color: #24292e;
+      margin: 0;
+      padding: 0;
       transition: background 0.3s, color 0.3s;
     }
 
@@ -52,6 +54,23 @@
       font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
       font-weight: 700;
       letter-spacing: -1px;
+    }
+
+    .stackedit__html h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5em;
+    }
+
+    .stackedit__html h2 {
+      font-size: 1.3rem;
+      margin-top: 2.2em;
+      margin-bottom: 0.5em;
+      color: #0969da;
+      letter-spacing: -0.5px;
+    }
+
+    .dark-mode .stackedit__html h2 {
+      color: #58a6ff;
     }
 
     .stackedit__html hr {
@@ -192,34 +211,22 @@
       color: #58a6ff;
     }
 
-    @media (max-width: 600px) {
-      .social-icons-row {
-        gap: 16px;
-        justify-content: center;
-      }
-
-      .icon-label {
-        min-width: 60px;
-        font-size: 0.92rem;
-      }
-
-      .icon-label span {
-        font-size: 0.92rem;
-      }
-    }
-
     .console-panel {
       background: #f5f7fa;
-      color: #23272e;
+      color: #24292e;
       border-radius: 8px;
       box-shadow: 0 2px 16px #0001;
-      border: 1.5px solid #e0e3e8;
-      margin-bottom: 32px;
+      border: 1.5px solid #d0d7de;
+      margin-bottom: 2.2em;
       padding: 28px 28px 20px 28px;
       font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
       font-size: 1.01rem;
       transition: background 0.3s, color 0.3s;
       position: relative;
+    }
+
+    .console-panel:last-child {
+      margin-bottom: 0;
     }
 
     .console-panel h2 {
@@ -237,12 +244,18 @@
     .console-panel strong,
     .console-panel em,
     .console-panel a {
-      color: #23272e;
+      color: #24292e;
       font-family: inherit;
     }
 
     .console-panel ul {
       margin-bottom: 10px;
+      margin: 0.5em 0 0.5em 1.2em;
+      padding: 0;
+    }
+
+    .console-panel li {
+      margin-bottom: 0.3em;
     }
 
     .console-panel strong {
@@ -266,7 +279,7 @@
 
     .dark-mode .console-panel {
       background: #181a1b;
-      color: #e6e6e6;
+      color: #c9d1d9;
       border: 1.5px solid #30363d;
       box-shadow: 0 2px 24px #0005;
     }
@@ -280,7 +293,7 @@
     .dark-mode .console-panel strong,
     .dark-mode .console-panel em,
     .dark-mode .console-panel a {
-      color: #e6e6e6;
+      color: #c9d1d9;
     }
 
     .dark-mode .console-panel strong {
@@ -300,6 +313,32 @@
     }
 
     @media (max-width: 600px) {
+      .social-icons-row {
+        gap: 16px;
+        justify-content: center;
+      }
+
+      .icon-label {
+        min-width: 60px;
+        font-size: 0.92rem;
+      }
+
+      .icon-label span {
+        font-size: 0.92rem;
+      }
+
+      .stackedit__html {
+        padding: 16px 4px 12px 4px;
+      }
+
+      .stackedit__html h1 {
+        font-size: 1.4rem;
+      }
+
+      .stackedit__html h2 {
+        font-size: 1.05rem;
+      }
+
       .console-panel {
         padding: 16px 8px 12px 8px;
         font-size: 0.97rem;
@@ -487,7 +526,7 @@
       <p><strong>Platform:</strong> <em>CMS + Custom Backend</em><br>
         <strong>Website:</strong> <a href="https://www.fabheads.in">fabheads.in</a>
       </p>
-      <p>Corporate site for India’s leading composites startup.</p>
+      <p>Corporate site for India's leading composites startup.</p>
       <strong>Key Features:</strong>
       <ul>
         <li>Product catalog and inquiry forms</li>
@@ -527,7 +566,7 @@
       <strong>Role:</strong> API authentications, Backend management, Angular developer
     </section>
 
-    <p>There are many other web development roles I have done over 12 years. ( as a consultant) and details can’t be
+    <p>There are many other web development roles I have done over 12 years. ( as a consultant) and details can't be
       shared without the consent of company owners.</p>
   </div>
 </body>
